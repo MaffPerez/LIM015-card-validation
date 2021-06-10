@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+/* Selector universal, todo el codigo esta centrado y con letra Staatliches */
+
+
+*{
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+/* Contenedor de la cabecera de la pagina*/
+.container-header {
+    background: #252525;
+    color: #ffffff;
+    height: 75px;
+    font-size: 30px;
+}
+
+/* Contenedor del contenido principal*/
+.container-main{
+    background-color: #ffffff;
+}
+
+
+.container-form {
+    display:flex;
+    margin: 15px auto;
+    width: 700px;
+    background-color: #00adb5;
+    border-radius: 35px;
+    box-shadow: 0 0.45rem 1.45rem 0 #7c7b7b;
+}
+
+
+
+
+
+.container__payment-details {
+    background: #aad8d3;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px;
+    height: 425px;
+    width: 230px;
+    color: #ffffff;
+    border-radius: 50px;
+
+}
+
+
+.container__front-card {
+    background: #cacaca;
+    border-radius: 15px;
+    height: 180px;
+    width: 330px;
+    margin-top: 40px;
+    margin-right: 60px;
+    padding: 10px;
+    
+}
+
+
+.container__back-card {
+    background: #cacaca;
+    width: 330px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 260px;
+    margin-left: 253px;
+    position:fixed;
+
+}
+
+.container__front-card:hover,
+.container__back-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #464646;
+    transition: tranbsform 10ms;
+    transform: scale(1.03);
+}
+ul {
+    list-style:none;
+}
+
+/* Boton pagar*/
+.btn_pagar {
+    color: #000000;
+    background: #ffffff;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    margin-top: 200px;
+    margin-right: 50px;
+    width: 150px;
+    font-size: 25px;
+}
+
+.btn_pagar:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #ffffff;
+    transition: tranbsform 100ms;
+    transform: scale(1.03);
+}
+
+
+
+/* Contenedor del pie de pagina*/
+.container-footer {
+    background: #eeeeee;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+
+ul.footer-items li {
+    margin: 5px;
+    display: inline;
+    color: #000000;
+}
+
