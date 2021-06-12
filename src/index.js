@@ -1,18 +1,25 @@
-/* eslint-disable no-console */
+
 import validator from './validator.js';
 
-let btnvalidar = document.getElementById("validar")
+let btnvalidar = document.getElementById("validar");
 
 const capturavalores=(event) => {
 
     event.preventDefault();
     let cardNumber = document.getElementById("number_card").value;
-    console.log(cardNumber);
-    validator.isValid(cardNumber);
+    let cardValidator = validator.isValid(cardNumber);
+
+    if (cardValidator === true){
+        alert("es valida")
+    }
+    else{
+        alert("no es valida")
+    }
 
 }
+
+//Eventos del DOM para llamar a las funciones
 btnvalidar.addEventListener("click",capturavalores)
 
 
 
-console.log(validator);
