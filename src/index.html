@@ -6,26 +6,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container-header"> 
+    <header class="container-header">
       <div class="tittle-header">
         <h1> S A N D E L L A  </h1>
       </div>
     </header>
 
     <main class="container-main">
-      <form  class="container-form" id="paymentForm">
+      <section class="container-form" id="paymentForm">
         <div class="container__payment-details">
-          <ul>
-            <li>Detalles de pago:</li>
-            <li><input type="submit" class="btn_pagar" id="validar" value="P a g a r 🛒"></li>
-          </ul>
+            <p>Detalles de pago:</p>
+            <input type="submit" class="btn_pagar" id="pagar" style="display:none" value="P a g a r 🛒">
         </div>
         <div class="container__front-card">
           <ul class="list-form">
             <li><label>Número de tarjeta de crédito/débito</label></li>
             <li><input type="text" class="input" id="number_card" placeholder="#### #### #### ####" minlength="9" maxlength="16" ></li>
+            <li style="display:none" id="tarjeta_valida">La tarjeta es valida</li>
+            <li style="display:none" id="tarjeta_invalida">La tarjeta es invalida</li>
+            <li style="display:none" id="tarjeta_vacia">Ingrese el número de la tarjeta</li>
             <li><label>Fecha de expiración (MM/AA)</label></li>
             <li><input type="text" class="input_mmaa" id="expiry_year"  placeholder="Ej. 05/22" minlegth="3"  maxlength="4" ></li>
+            <li><input type="submit" class="btn__validar-tarjeta" id="validar" value="Validar tarjeta" style="display:block"></li>
           </ul>
         </div>
         <div class="container__back-card">
@@ -34,7 +36,7 @@
             <li><input type="password"  id="cvv" placeholder="Ej. 125" minlegth="3" maxlength="3"></li>
           </ul>
         </div>
-      </form>
+      </section>
     </main>
 
     <footer class="container-footer">

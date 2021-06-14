@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
 /* Selector universal, todo el codigo esta centrado y con letra Staatliches */
 
@@ -61,7 +60,7 @@
     margin-top: 40px;
     margin-right: 60px;
     padding: 10px;
-    
+    font-size: 10px;
 }
 
 

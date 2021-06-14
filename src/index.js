@@ -1,25 +1,20 @@
-
 import validator from './validator.js';
 
-let btnvalidar = document.getElementById("validar");
+const btnvalidar = document.getElementById("validar");
 
-const capturavalores=(event) => {
-
-    event.preventDefault();
+btnvalidar.addEventListener("click", () => {
     let cardNumber = document.getElementById("number_card").value;
-    let cardValidator = validator.isValid(cardNumber);
-
-    if (cardValidator === true){
-        alert("es valida")
-    }
-    else{
-        alert("no es valida")
-    }
-
-}
-
-//Eventos del DOM para llamar a las funciones
-btnvalidar.addEventListener("click",capturavalores)
+    let validatorCard = validator.isValid(cardNumber);
+        if (validatorCard === true && cardNumber!== ""){
+            alert("tarjeta correcta");
+        }
+        else if (validatorCard === "") {
+            alert("Ingrese el número de tarjeta")
+        }
+        else{
+            alert("tarjeta incorrecta")
+        }
+});
 
 
 
