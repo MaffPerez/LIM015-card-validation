@@ -11,8 +11,8 @@ const validator = {
 
     // Para el orden par:
     //Primero vamos a seleccionar a los que estan en el orden par y multiplicaremos por 2 (se empieza a contar en 0 entonces el n=1 es para pares y el n=0 para impares)
-      for (let n=1; n < cardNumber.length; n+=2) {
-          let numeroPar = parseInt(cardNumber.charAt(n) * 2);
+      for (let i=1; i < cardNumber.length; i+=2) {
+          let numeroPar = parseInt(cardNumber.charAt(i) * 2);
             //Si el resultado de los numeros son mayores o igual a 10 se sumaran los digitos entre ellos (por ejemplo: 10 = 1+2=3. 3 seria el digito final)
         if (numeroPar >= 10){
           let convirtiendoPar = numeroPar.toString();
@@ -28,8 +28,8 @@ const validator = {
 
     //Para el orden impar:
     //Seleccionaremos los del orden impar y los sumaremos al total
-      for (let n=0; n < cardNumber.length; n+=2) {
-          let numeroImpar = parseInt(cardNumber.charAt(n));
+      for (let i=0; i < cardNumber.length; i+=2) {
+          let numeroImpar = parseInt(cardNumber.charAt(i));
           todoSumado = todoSumado + numeroImpar;
       }
     //Si la suma total entre pares e impares la dividimos entre 10 y nos da un residuo 0 se retorna el valor de true (tarjeta valida)
@@ -42,8 +42,17 @@ const validator = {
       }
   },
   //Funcion ocultar todos los digitos menos los ultimos 4
-  maskify: function (validationCardNumber) {
-
+  maskify: function mostrar(validationCardNumber) {
+    let numberOcult ="";
+    for(let i=0; i < validationCardNumber.length; i++){
+      if(i<= validationCardNumber.length-5){
+        numberOcult = numberOcult + "#"
+      }else{
+        numberOcult = numberOcult + validationCardNumber[i]
+      }
+    }
+      //console.log(numberOcult);
+    return numberOcult;
   }
 };
 export default validator;

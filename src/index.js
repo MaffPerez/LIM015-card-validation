@@ -1,19 +1,36 @@
 import validator from './validator.js';
+let textVacio = document.getElementById("tarjeta_vacia");
+let textValid = document.getElementById("tarjeta_valida");
+let textInvalid = document.getElementById("tarjeta_invalida");
+let inputNumeros = document.getElementById("number_card")
 
-const btnvalidar = document.getElementById("validar");
+const btnValid = document.getElementById("validar");
+const btnPay = document.getElementById("pagar");
 
-btnvalidar.addEventListener("click", () => {
-    let cardNumber = document.getElementById("number_card").value;
+btnValid.addEventListener("click", () => {
+    let cardNumber = inputNumeros.value;
     let validatorCard = validator.isValid(cardNumber);
-        if (validatorCard === true && cardNumber!== ""){
-            alert("tarjeta correcta");
+
+        if (validatorCard === true && cardNumber!== "" ){
+            textValid.style.display="block";
+            textInvalid.style.display="none";
+            textVacio.style.display="none";
+            btnValid.style.display="none";
+            inputNumeros.value = validator.maskify(cardNumber);
+            btnPay.style.display = "block";
+
         }
-        else if (validatorCard === "") {
-            alert("Ingrese el número de tarjeta")
+        else if (cardNumber === "") {
+            textVacio.style.display="block";
+            textValid.style.display="none";
+            textInvalid.style.display="none";
+
+        }else{
+            textInvalid.style.display="block";
+            textValid.style.display="none";
+            textVacio.style.display="none";
         }
-        else{
-            alert("tarjeta incorrecta")
-        }
+
 });
 
 

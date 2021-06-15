@@ -25,7 +25,6 @@
     background-color: #ffffff;
 }
 
-
 .container-form {
     display:flex;
     margin: 15px auto;
@@ -34,10 +33,6 @@
     border-radius: 35px;
     box-shadow: 0 0.45rem 1.45rem 0 #7c7b7b;
 }
-
-
-
-
 
 .container__payment-details {
     background: #aad8d3;
@@ -93,8 +88,6 @@ ul {
     background: #ffffff;
     border-radius: 10px;
     font-family: 'Staatliches', cursive;
-    margin-top: 200px;
-    margin-right: 50px;
     width: 150px;
     font-size: 25px;
 }
