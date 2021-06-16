@@ -27,54 +27,84 @@
 
 .container-form {
     display:flex;
-    margin: 15px auto;
-    width: 700px;
-    background-color: #00adb5;
-    border-radius: 35px;
+    margin: 30px auto;
+    width: 720px;
+    background-color: #EEC4C4;
     box-shadow: 0 0.45rem 1.45rem 0 #7c7b7b;
 }
 
 .container__payment-details {
-    background: #aad8d3;
-    display: flex;
-    margin: 30px auto;
-    padding: 20px;
+    background: #ffffff;
+    display: inline-flex;
+    margin: 0px;
     height: 425px;
-    width: 230px;
-    color: #ffffff;
-    border-radius: 50px;
+    width: 330px;
+    color: #000000;
+}
 
+.imagen_compras {
+    height: 210px;
+    margin-top: 0px;
+    margin-right: 20px;
 }
 
 
 .container__front-card {
-    background: #cacaca;
+    background-image: url("img/alpaCard.jpeg");
     border-radius: 15px;
     height: 180px;
-    width: 330px;
-    margin-top: 40px;
-    margin-right: 60px;
-    padding: 10px;
-    font-size: 10px;
+    width: 300px;
+    margin: 20px auto;
+    padding: 25px;
+}
+.inpu {
+    border:05   ;
+    background: #ffffff;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px auto;
+}
+.inp {
+    border:05;
+    background: #ffffff;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
 }
 
+ul.list-form li {
+    color: #e95a5a;
+    margin:  auto;
+}
 
 .container__back-card {
-    background: #cacaca;
-    width: 330px;
+    background-image: url("img/backCard.jpeg");
+    width: 300px;
     height: 180px;
     padding: 10px;
     border-radius: 15px;
-    margin-top: 260px;
-    margin-left: 253px;
+    margin-top: 220px;
+    margin-left: 330px;
     position:fixed;
 
 }
 
+.input_cvv {
+display: inline;
+border:05;
+background: #ffffff;
+width: 60px;
+height: 30px;
+margin-top: 72px;
+margin-left: 60px;
+font-size: 20px;
+}
 .container__front-card:hover,
 .container__back-card:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #464646;
+    box-shadow: 0 0.4rem 1.4rem 0 #000000;
     transition: tranbsform 10ms;
     transform: scale(1.03);
 }
@@ -87,14 +117,14 @@ ul {
     color: #000000;
     background: #ffffff;
     border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    width: 150px;
     font-size: 25px;
+    margin: 30px;
+
 }
 
 .btn_pagar:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #ffffff;
+    box-shadow: 0 0.4rem 1.4rem 0 #afa4a4;
     transition: tranbsform 100ms;
     transform: scale(1.03);
 }
@@ -103,7 +133,7 @@ ul {
 
 /* Contenedor del pie de pagina*/
 .container-footer {
-    background: #eeeeee;
+    background: #D1D9D9;
     padding: 2px;
     display: flex;
     justify-content: center;
