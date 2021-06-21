@@ -4,45 +4,62 @@
     <meta charset="utf-8">
     <title> Detalles de pago </title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/67c07d3e62.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="container-header">
-      <div class="tittle-header">
-        <h1> S A N D E L L A  </h1>
-      </div>
+        <h1>B <i class="fas fa-bomb arcoiris"></i> M B</h1>
+        <p class="continue-shopping">Seguir Comprando <i class="fas fa-arrow-alt-circle-right verde"></i></p>
     </header>
 
     <main class="container-main">
-      <section class="container-form" id="paymentForm">
-
-        <div class="container__payment-details">
-          <ul>
-            <li><h2> 🛒 Detalles de pago :</h2></li>
-            <li> <img class= "imagen_compras" src="img/reloj_dorado.png"></li>
-            <li>01 RELOJ CUERO MTP-VT01GL-2B PARA HOMBRE </li>
-            <li><input type="submit" class="btn_pagar" id="pagar" style="display:block" value="P a g a r S/ 169"></li>
-          </ul>
+        <section class="container__payment-details">
+          <div class="progress__payment">
+            <p class="progress__payment-elements" ></p>
+            <p class="progess_bar"><i class="fas fa-check verde"></i> Seleccionar orden  </p>
+            <p class="progress__payment-elements"></p>
+            <p class="progess_bar"><i class="fas fa-check verde"></i> Pagar </p>
+            <p class="progress__payment-elements"></p>
+            <p class="progess_bar"> Compra realizada</p>
           </div>
+
+          <ul>
+            <li><h2><i class="fas fa-shopping-cart"></i> Detalles de la orden:</h2></li>
+            <li id="details-shop" >RELOJ PULSERA ANALÓGICO CRONO </li>
+            <li id="details__shop-reloj">
+              Movimiento: Cuarzo Analógico Japonés<br>
+              Cristal: Mineral<br>
+              Material de la caja: Acero Inoxidable<br>
+              Diámetro de la caja: 44.50mm<br>
+              Material de la correa: Piel Legítima<br>
+              Resistencia al agua (metros): 100<br>
+              <br>
+            </li>
+            <li> <img class= "imagen_compras" src="img/reloj_dorado.png" alt="chaqueta bomber color negro"></li>
+            <li><input type="submit" class="btn_pagar" id="pagar" style="display:block" value="🛒 Pagar S/ 169"></li>
+          </ul>
+        </section>
+
+      <section class="container__payment-cards">
+        <h3><i class="far fa-credit-card"></i> Detalles de pago</h3>
         <div class="container__front-card">
           <ul class="list-form">
-            <li><input type="text" class="inpu" id="number_card" placeholder="0000 0000 0000 0000" minlength="9" maxlength="16" ></li>
-            <li style="display:none" id="tarjeta_valida">La tarjeta es valida</li>
-            <li style="display:none" id="tarjeta_invalida">La tarjeta es invalida</li>
-            <li style="display:none" id="tarjeta_vacia">Ingrese el número de la tarjeta</li>
-            <li><input type="text" class="inp" id="expiry_year"  placeholder="05/22" minlegth="3"  maxlength="4" required ></li>
+            <li><input type="text" class="input__card-number" id="number_card" placeholder="0000 0000 0000 0000" minlength="9" maxlength="16" ></li>
+            <li style="display:none" id="tarjeta_valida"><i class="fas fa-check verde"></i> La tarjeta es valida</li>
+            <li style="display:none" id="tarjeta_invalida"><i class="fas fa-times rojo"></i> La tarjeta es invalida</li>
+            <li style="display:none" id="tarjeta_vacia"><i class="fas fa-times rojo"></i> Ingrese el número de la tarjeta</li>
+            <li><input type="text" class="input__expiry-year" id="expiry_year"  placeholder="05/22" minlegth="3"  maxlength="4" required ></li>
           </ul>
         </div>
 
         <div class="container__back-card">
           <ul>
-            
-            <li><input class="input_cvv" type="password"  id="cvv" placeholder="Ej. 125" minlegth="3" maxlength="3" required></li>
+            <li><input class="input__cvv" type="password"  id="cvv" placeholder="125" minlegth="3" maxlength="3" required></li>
             <li><input type="submit" class="btn__validar-tarjeta" id="validar" value="Validar tarjeta" style="display:block"></li>
           </ul>
         </div>
-
       </section>
-    </main>
+      </main>
 
     <footer class="container-footer">
         <ul class="footer-items">
