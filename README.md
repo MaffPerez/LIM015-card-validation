@@ -12,3 +12,4 @@ Busque referencias de tiendas online populares. Encontre que todas tenian en com
 Para el prototipo trate de amalgar la simplicidad que tenian las paginas online que encontre, añadiendole mas color. Me parecio didactico que el usuario pueda insertar su tarjeta en una "replica". Primero para el encabezado deje la simpleza del nombre de la tienda. Para el contenido principal decidi separarlo en dos secciones (una era la tarjeta y la otro los detalles de la compra) . El nombre y estilo de la pagina en sí se refiere a una "bomba" pero de color. Me inspire en los colores del arcoiris y la paleta de colores de abajo.
 
 ![alt text](src/img/paleta.jpg)
+![alt text](src/img/prototipo-papel.jpeg)
