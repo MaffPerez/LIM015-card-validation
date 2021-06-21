@@ -4,4 +4,4 @@ Cuando decidi hacer card validation tenia claro que no queria hacer una banca on
 
 ## Investigando: Prototipo en papel
 Cuando
-<img src="img/investigación.jpg">
+<img src="/img/investigación.jpg">
