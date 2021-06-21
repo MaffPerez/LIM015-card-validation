@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* (*)Selector universal */
+* {
+    box-sizing: border-box;
+    font-family: 'Staatliches';
+    justify-content: center;
+    margin:  auto;
+}
+
+body{
+    font-size: 100%;
+    background: #ffffff;
+}
+
+/* Contenedor de la cabecera de la pagina*/
+.container-header {
+    display: flex;
+    border-bottom:inset;
+    background: #ffffff;
+}
+p.continue-shopping{
+    font-size: 1.7em;
+    margin-right: 2em;
+}
+
+
+
+h1 {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background: #fff;
+    mix-blend-mode: multiply;
+    position: relative;
+    font-size: 3em;
+    margin: 0.2em;
+}
+
+h1:before {
+    content: '';
+    display: block;
+    width: 35%;
+    margin-left: 29px;
+    height: 87%;
+    background: linear-gradient(to bottom, red, orange, rgb(255, 255, 0), green, blue, purple);
+    mix-blend-mode: screen;
+    position: absolute;
+}
+
+ul{
+    list-style:none;
+}
+/* Contenedor del contenido principal*/
+.container-main{
+    display: flex;
+    background-image: url("https://thumbs.dreamstime.com/b/llama-fresca-del-humo-arco-iris-eco-extracto-sobre-el-fondo-blanco-140834288.jpg");
+    
+}
+
+.container__payment-details {
+    margin: 20px 0px 20px 130px;
+    width: 40em;
+    height:31em;
+    background-color: #f8f8f8;
+    padding: 5px;
+}
+
+.progress__payment{
+    display:flex;
+    height: 4.5em;
+    border-bottom:inset;
+    background: #f8f8f8;
+    padding: 15px;
+
+}
+p.progress__payment-elements{
+    background: #FFDF6B;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+}
+
+p.progess_bar{
+    height: 2px;
+    width: 200px;
+    background: #FFDF6B;
+    margin-top:20px;
+    font-size: 1em;
+}
+
+#details-shop{
+    position:fixed;
+    margin-left: 260px;
+    margin-top: 70px;
+    font-size: 1.5em;
+}
+#details__shop-reloj{
+    position:fixed;
+    margin-left: 260px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: justify;
+    border-bottom: inset;
+}
+.imagen_compras {
+    height: 18em;
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h3{
+    margin: 10px;
+    padding: 11.5px;
+    border-bottom: inset;
+    font-size: 2em;
+    text-align: center;
+}
+
+.container__payment-cards {
+    background: #ffffff;
+    margin-right: 200px;
+    width: 25em;
+    height:31em;
+    box-shadow: 0 0.4rem 1.4rem 0 #000000;
+}
+
+
+.container__front-card {
+    background-image: url("img/front_card.png");
+    height: 180px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-family: Share Tech Mono;
+    padding: 30px;
+
+}
+.verde{
+    color: green;
+}
+.rojo{
+    color:red;
+}
+.input__card-number {
+    border:05;
+    background: #ffffff;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px auto;
+    font-family: Share Tech Mono;
+}
+.input__expiry-year{
+    border:05;
+    background: #ffffff;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Share Tech Mono;
+}
+
+
+
+.container__back-card {
+    background-image: url("img/tras.jpg");
+    width: 300px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    position:fixed;
+    font-size: 16px;
+
+}
+
+.input__cvv {
+display: inline;
+border:05;
+background: #ffffff;
+width: 60px;
+height: 30px;
+margin-top: 72px;
+margin-left: 60px;
+font-size: 20px;
+font-family: Share Tech Mono;
+}
+
+
+
+/* Boton pagar*/
+.btn_pagar {
+    color: #000000;
+    background: #FFDF6B;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 280px;
+
+}
+
+.btn_pagar:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #afa4a4;
+    transition: tranbsform 100ms;
+    transform: scale(1.03);
+}
+
+
+
+/* Contenedor del pie de pagina*/
+
+.container-footer {
+    background: #ffffff;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+
+ul.footer-items li {
+    margin: 5px;
+    display: inline;
+    color: #000000;
+}
+
+
