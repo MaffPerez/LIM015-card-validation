@@ -25,8 +25,6 @@ p.continue-shopping{
     margin-right: 2em;
 }
 
-
-
 h1 {
     display: inline-block;
     color: rgb(0, 0, 0);
@@ -55,7 +53,6 @@ ul{
 .container-main{
     display: flex;
     background-image: url("https://thumbs.dreamstime.com/b/llama-fresca-del-humo-arco-iris-eco-extracto-sobre-el-fondo-blanco-140834288.jpg");
-    
 }
 
 .container__payment-details {
@@ -130,8 +127,6 @@ h3{
     box-shadow: 0 0.4rem 1.4rem 0 #000000;
 }
 
-
-
 .container__front-card {
     background-image: url("img/front_card.png");
     height: 180px;
@@ -158,6 +153,10 @@ h3{
     margin: 20px auto;
     font-family: Share Tech Mono;
 }
+
+ul.list-card li{
+    color: #fff;
+}
 .input__expiry-year{
     border:05;
     background: #ffffff;
@@ -167,10 +166,8 @@ h3{
     font-family: Share Tech Mono;
 }
 
-
-
 .container__back-card {
-    background:rgb(78, 17, 80) ;
+    background-image: url("img/back_Card.jpg");
     width: 300px;
     height: 180px;
     padding: 10px;
@@ -179,7 +176,6 @@ h3{
     margin-left: 50px;
     position:fixed;
     font-size: 16px;
-
 }
 
 .input__cvv {
@@ -189,11 +185,10 @@ background: #ffffff;
 width: 60px;
 height: 30px;
 margin-top: 72px;
-margin-left: 60px;
-font-size: 20px;
+margin-left: 130px;
+font-size: 15px;
 font-family: Share Tech Mono;
 }
-
 
 
 /* Boton pagar*/
@@ -203,18 +198,22 @@ font-family: Share Tech Mono;
     border-radius: 10px;
     font-size: 25px;
     margin-left: 280px;
-
 }
-
-.btn_pagar:hover {
+.btn_pagar:hover,
+.btn__validar-tarjeta:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 #afa4a4;
     transition: tranbsform 100ms;
     transform: scale(1.03);
 }
 
-
-
+.btn__validar-tarjeta{
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+    background: #FFDF6B;
+    font-size: 15px;
+}
 /* Contenedor del pie de pagina*/
 
 .container-footer {
@@ -225,7 +224,6 @@ font-family: Share Tech Mono;
     align-items: center;
     height: 30px;
 }
-
 
 ul.footer-items li {
     margin: 5px;

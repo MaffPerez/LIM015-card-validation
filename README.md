@@ -13,3 +13,7 @@ Para el prototipo trate de amalgar la simplicidad que tenian las paginas online 
 
 ![alt text](src/img/paleta.jpg)
 ![alt text](src/img/prototipo-papel.jpeg)
+
+## 4.Aplicación
+Validara numeros de tarjeta de credio (aparecera el texto "es valida"). En caso contrario aparecera "no es valida" y si no insertamos un numero de tarjeta tambien saldra un texto indicandonos que lo hagamos. Por ultimo aparecera el boton pagar y nos saldra una alerta agradeciendo la compra y refrescando la pagina.
+![alt text](src/img/aplication.jpg)
