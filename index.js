@@ -2,11 +2,11 @@ import validator from './validator.js';
 const textVacio = document.getElementById("tarjeta_vacia");
 const textValid = document.getElementById("tarjeta_valida");
 const textInvalid = document.getElementById("tarjeta_invalida");
-const inputNumeros = document.getElementById("number_card")
+let inputNumeros = document.getElementById("number_card")
 
 const btnValid = document.getElementById("validar");
 const btnPay = document.getElementById("pagar");
-
+// Al hacer click el boton valida los numeros de tarjeta de credito
 btnValid.addEventListener("click", () => {
     let cardNumber = inputNumeros.value;
     let validatorCard = validator.isValid(cardNumber);
@@ -33,6 +33,7 @@ btnValid.addEventListener("click", () => {
 
 });
 
+//Al hacer click en pagar, refresca toda la pagina
 
 btnPay.addEventListener("click", () => {
     alert("¡Gracias por su compra :D!")
